@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>עדכונים</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>הפרויקט שלי</h1>
+      <ul>
+        <li><a href="index.html">דף הבית</a></li>
+        <li><a href="updates.html" class="active">עדכונים</a></li>
+        <li><a href="tutorials.html">מדריכים</a></li>
+        <li><a href="resources.html">מידע מג"ב</a></li>
+        <li><a href="gallery.html">גלריה</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>עדכונים אחרונים</h2>
+    <p>כאן תוכלו למצוא את כל העדכונים החדשים והחשובים ביותר שקשורים ליחידה.</p>
+  </section>
+
+  <!-- Update Boxes -->
+  <section class="resources">
+    <h3>רשימת עדכונים</h3>
+    <ul>
+        שבת שלום יחידת מגב , ההודעה מופנת למי שאין הכשרה למסוק<br>
+        בזמן הקרוב יתחילו לעשות לכם הכשרה למסוק , כלל השוטרים שמוכנים להכשרה למסוק לכתוב בחדר האישי ולתייג אותי.<br>
+        מי שמרגיש שהוא לא מוכן שיכתוב בחדר אישי ונעזור לו.<br>
+        שימו לב יש לכם 2 נסיונות לעבור את ההכשרה או שתחזרו ליחידת הסיור אז להיות מוכנים!!<br>
+    </ul>
+
+    <button onclick="openModal()">קרא עוד</button>
+  </section>
+
+  <!-- Modal -->
+  <div class="modal" id="updateModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>פירוט עדכונים</h3>
+      <p>בקרוב נכניס תמיכה במודלים של בינה מלאכותית, קישור לממשקי API, ועוד.</p>
+      <p>הישארו מעודכנים!</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy;אתר זה נוצר על ידי פיקה</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function openModal() {
+      document.getElementById('updateModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('updateModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('updateModal');
+      if (event.target === modal) {
+        closeModal();
+      }
+    }
+  </script>
+</body>
+</html>
