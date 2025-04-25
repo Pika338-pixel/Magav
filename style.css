@@ -6,6 +6,13 @@
   direction: rtl;
   scroll-behavior: smooth;
 }
+body {
+  background-image: url('https://cdn.discordapp.com/attachments/1336663709967450163/1365408606417326193/2.png?ex=680d335b&is=680be1db&hm=2d4349a3390e97e6b67506668fe038692d745af7dc073f8c064a430a1b6d140b&');
+  background-size: cover; /* Make the image cover the entire screen */
+  background-position: center center; /* Center the image */
+  background-attachment: fixed; /* Keep the background fixed when scrolling */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
 
 body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
